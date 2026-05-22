@@ -786,7 +786,40 @@
 
             </article>
 
+            
+             <article
+                data-brand="nike"
+                onclick="openProductModal(
+                'Nike',
+                'Nike',
+                '$235.000 COP pantalón, $220.000 COP Buzo',
+                'Sudadera importados bajo pedido. Consulta disponibilidad y tallas.',
+                '/static/img/nikeimg21.jpeg'
+                )"
+                class="product-card group bg-white border border-black/10 p-4 cursor-pointer hover:shadow-xl transition duration-300">
 
+                <div class="aspect-[4/5] overflow-hidden bg-[#eee]">
+                    <img
+                        src="{{ url_for('static', filename='img/nikeimg21.jpeg') }}"
+                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                </div>
+
+                <div class="pt-5">
+                    <p class="text-[11px] uppercase tracking-[0.25em] text-[#8b1e2d]">
+                        Nike
+                    </p>
+
+                    <h3 class="text-2xl mt-2">
+                        Nike 
+                    </h3>
+
+                    <p class="font-semibold mt-3">
+                        $455.000 COP
+                    </p>
+                </div>
+
+
+            </article>
 
 
 
@@ -1293,6 +1326,39 @@
 
                     <p class="font-semibold mt-3">
                         $95.000 COP
+                    </p>
+                </div>
+
+            </article>
+
+              <article
+                data-brand="otras"
+                onclick="openProductModal(
+                'Marca Lole',
+                'Marca Lole',
+                '$70.000 COP',
+                'Esqueleto deportivo, producto disponible bajo pedido.',
+                '/static/img/local1.jpeg'
+                )"
+                class="product-card group bg-white border border-black/10 p-4 cursor-pointer hover:shadow-xl transition duration-300">
+
+                <div class="aspect-[4/5] overflow-hidden bg-[#eee]">
+                    <img
+                        src="{{ url_for('static', filename='img/local1.jpeg') }}"
+                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                </div>
+
+                <div class="pt-5">
+                    <p class="text-[11px] uppercase tracking-[0.25em] text-[#8b1e2d]">
+                       Marca Local Canada
+                    </p>
+
+                    <h3 class="text-2xl mt-2">
+                        Marca Local Canada
+                    </h3>
+
+                    <p class="font-semibold mt-3">
+                        $70.000 COP
                     </p>
                 </div>
 
