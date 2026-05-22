@@ -1,0 +1,107 @@
+<section class="bg-[#faf7f3]">
+
+     <section class="bg-[#f8f5f1] border-y border-black/10">
+
+    <div class="max-w-[1400px] mx-auto px-8 grid grid-cols-[260px_1fr] items-center">
+
+        <div>
+            <p class="text-[11px] uppercase tracking-[0.35em] text-[#8b1e2d]">
+                Explora por marca
+            </p>
+        </div>
+
+       
+    </div>
+
+</section>
+
+    <!-- LOGOS -->
+    <div class="max-w-[1400px] mx-auto border-y border-black/10">
+
+        <div class="grid grid-cols-5 h-[95px]">
+
+            <div class="flex items-center justify-center border-r border-black/10">
+                <img
+                    src="{{ url_for('static', filename='img/nike.jpg') }}"
+                    alt="Nike"
+                    class="h-10 object-contain"
+                >
+            </div>
+
+            <div class="flex items-center justify-center border-r border-black/10">
+                <img
+                    src="{{ url_for('static', filename='img/adidas.jpg') }}"
+                    alt="Adidas"
+                    class="h-12 object-contain"
+                >
+            </div>
+
+            <div class="flex items-center justify-center border-r border-black/10">
+                <img
+                    src="{{ url_for('static', filename='img/tommy.jpg') }}"
+                    alt="Tommy"
+                    class="h-7 object-contain"
+                >
+            </div>
+
+            <div class="flex items-center justify-center border-r border-black/10">
+                <img
+                    src="{{ url_for('static', filename='img/thenorth.jpg') }}"
+                    alt="North Face"
+                    class="h-14 object-contain"
+                >
+            </div>
+
+            <div class="flex items-center justify-center">
+                <img
+                    src="{{ url_for('static', filename='img/columbia.jpg') }}"
+                    alt="Columbia"
+                    class="h-10 object-contain"
+                >
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- BANNER ROJO -->
+
+    <div class="max-w-[1400px] mx-auto py-8">
+
+        <div class="grid lg:grid-cols-2 overflow-hidden rounded-[18px]">
+
+            <div class="bg-[#8b1e2d] text-white p-14 flex flex-col justify-center">
+
+                <p class="uppercase tracking-[0.3em] text-[11px] mb-8">
+                    Canadá → Colombia
+                </p>
+
+                <h2 class="font-serif text-[4rem] leading-[0.95]">
+                    Productos que<br>
+                    vale la pena descubrir
+                </h2>
+
+                <a
+                    href="/productos"
+                    class="mt-10 uppercase tracking-[0.25em] text-sm"
+                >
+                    Explorar ahora →
+                </a>
+
+            </div>
+
+            <div>
+
+                <img
+                    src="{{ url_for('static', filename='img/baner.jpg') }}"
+                    alt=""
+                    class="w-full h-full object-cover"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
