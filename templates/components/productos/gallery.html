@@ -7,6 +7,7 @@
             <article
                 class="product-card group bg-white border border-black/10 p-4 cursor-pointer hover:shadow-xl transition duration-300"
                 data-brand="{{ producto.categoria }}"
+                data-codigo="{{ producto.codigo }}"
                 data-nombre="{{ producto.nombre }}"
                 data-marca="{{ producto.marca }}"
                 data-precio="{{ producto.precio }}"
@@ -31,6 +32,10 @@
 
                     <p class="font-semibold mt-3">
                         {{ producto.precio }}
+                    </p>
+
+                    <p class="text-xs text-gray-500 mt-1">
+                        Código: {{ producto.codigo }}
                     </p>
 
                     <button
@@ -95,6 +100,7 @@
             const card = button.closest(".product-card");
 
             addToCart(
+                card.dataset.codigo,
                 card.dataset.nombre,
                 card.dataset.marca,
                 card.dataset.precio
@@ -102,8 +108,8 @@
         });
     });
 
-    function addToCart(nombre, marca, precio) {
-        cart.push({ nombre, marca, precio });
+    function addToCart(codigo, nombre, marca, precio) {
+        cart.push({ codigo, nombre, marca, precio });
         renderCart();
     }
 
@@ -117,14 +123,14 @@
         cartItems.innerHTML = cart.map(function(item, index) {
             return `
                 <div class="border-b border-black/10 pb-2">
-                    <p class="font-medium">${index + 1}. ${item.nombre}</p>
-                    <p class="text-gray-500">${item.marca} - ${item.precio}</p>
+                    <p class="font-medium">${index + 1}. ${item.codigo}</p>
+                    <p class="text-gray-500">${item.nombre} - ${item.precio}</p>
                 </div>
             `;
         }).join("");
 
         const mensaje = cart.map(function(item, index) {
-            return `${index + 1}. ${item.nombre} - ${item.marca} - ${item.precio}`;
+            return `${index + 1}. ${item.codigo}`;
         }).join("\n");
 
         const textoFinal = encodeURIComponent(

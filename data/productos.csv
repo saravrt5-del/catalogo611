@@ -1,114 +1,147 @@
-nombre,marca,precio,descripcion,imagen,categoria
-Nike,Nike,$400.000 COP,Tenis importados bajo pedido. Consulta disponibilidad y tallas.,img/tenis nike1.jpeg,nike
-Nike,Nike,$230.000 COP,Buzo importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg2.jpeg,nike
-Nike,Nike,$310.000 COP,Tenis importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg3.jpeg,nike
-Nike,Nike,$300.000 COP,Tenis importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg4.jpeg,nike
-Nike,Nike,$290.000 COP,Tenis importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg5.jpeg,nike
-Nike,Nike,$490.000 COP,Tenis importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg6.jpeg,nike
-Nike,Nike,$220.000 COP,Sudadera importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg7.jpeg,nike
-Nike,Nike,$90.000 COP,Camiseta importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg9.jpeg,nike
-Nike,Nike,$90.000 COP,Camiseta importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg10.jpeg,nike
-Nike,Nike,$220.000 COP,Sudadera importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg11.jpeg,nike
-Nike,Nike,$115.000 COP,Pantalón de sudadera importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg12.jpeg,nike
-Nike,Nike,$180.000 COP,Buzo importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg14.jpeg,nike
-Nike,Nike,$145.000 COP,Top deportivo importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg15.jpeg,nike
-Nike,Nike,$200.000 COP,Top deportivo importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg16.jpeg,nike
-Nike,Nike,$125.000 COP,Top deportivo importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg17.jpeg,nike
-Nike,Nike,$220.000 COP,Canguro importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg13.jpeg,nike
-Nike,Nike,$232.000 COP,buzo importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg19.jpeg,nike
-Nike,Nike,$125.000 COP,Buzo importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg18.jpeg,nike
-Nike,Nike,$240.000 COP,Buzo importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg20.jpeg,nike
-Nike,Nike,$455.000 COP,Sudadera importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg21.jpeg,nike
-Nike,Nike,$370.000 COP,Sudadera importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg22.jpeg,nike
-Nike,Nike,$95.000 COP,Camiseta importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg23.jpeg,nike
-Nike,Nike,$220.000 COP,Pantalón importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg24.jpeg,nike
-Nike,Nike,$455.000 COP,Sudadera importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg21.jpeg,nike
-Adidas Samba,Adidas,$289.000 COP,Sneakers importados estilo urbano.,img/adidas1.jpeg,adidas
-Adidas Samba,Adidas,$270.000 COP,Sneakers importados estilo urbano.,img/adidas2.jpeg,adidas
-Adidas Running,Adidas,$349.000 COP,Sneakers importados estilo urbano.,img/adidas3.jpeg,adidas
-Adidas ,Adidas,$310.000 COP,Sneakers importados estilo urbano.,img/adidas4.jpeg,adidas
-Adidas Campus,Adidas,$270.000 COP,Sneakers importados estilo urbano.,img/adidas5.jpeg,adidas
-Adidas Adizero evo sl mujer,Adidas,$349.000 COP,Sneakers importados estilo urbano.,img/adidas6.jpeg,adidas
-Adidas Samba,Adidas,$255.000 COP,Sneakers importados estilo urbano.,img/adidas7.jpeg,adidas
-Adidas Adizero Boston 13 mujer,Adidas,$370.000 COP,Sneakers importados estilo urbano.,img/adidas9.jpeg,adidas
-Adidas,Adidas,$270.000 COP,Sneakers importados estilo urbano.,img/adidas10.jpeg,adidas
-Adidas Adizero adios pro 4,Adidas,$580.000 COP,Sneakers importados estilo urbano.,img/adidas11.jpeg,adidas
-Adidas ,Adidas,$250.000 COP,Sneakers importados estilo urbano.,img/adidas12.png,adidas
-Adidas Minecraft niño,Adidas,$160.000 COP,Sneakers importados estilo urbano.,img/adidas13.jpeg,adidas
-Adidas Disney frozen niñas ,Adidas,$150.000 COP,Sneakers importados estilo urbano.,img/adidas14.jpeg,adidas
-Adidas Disney frozen niñas ,Adidas,$150.000 COP,Sneakers importados estilo urbano.,img/adidas15.jpeg,adidas
-Adidas Campus niño ,Adidas,$180.000 COP,Sneakers importados estilo urbano.,img/adidas16.jpeg,adidas
-Adidas Dame X ,Adidas,$240.000 COP,Sneakers importados estilo urbano.,img/adidas17.png,adidas
-Adidas ultraboost,Adidas,$470.000 COP,Sneakers importados estilo urbano.,img/adidas18.jpeg,adidas
-Adidas Hombre ,Adidas,$280.000 COP,Sneakers importados estilo urbano.,img/adidas19.jpeg,adidas
-Adidas Adisar control 5,Adidas,$275.000 COP,Sneakers importados estilo urbano.,img/adidas20.jpeg,adidas
-Adidas Samba hombre,Adidas,$260.000 COP,Sneakers importados estilo urbano.,img/adidas21.png,adidas
-Adidas Pantalón hombre Demin jeans,Adidas,$330.000 COP, Importados estilo urbano.,img/adidas22.png,adidas
-Adidas Buzo hombre,Adidas,$149.000 COP, Importados estilo urbano.,img/adidas23.png,adidas
-Adidas Sudadera hombre,Adidas,$252.000 COP, Importados estilo urbano.,img/adidas24.png,adidas
-Adidas Buzo hombre,Adidas,$271.000 COP, Importados estilo urbano.,img/adidas25.png,adidas
-Adidas Camiseta hombre,Adidas,$97.000 COP, Importados estilo urbano.,img/adidas26.png,adidas
-Adidas Pantaloneta hombre,Adidas,$110.000 COP, Importados estilo urbano.,img/adidas27.png,adidas
-Adidas Camiseta,Adidas,$156.000 COP, Importados estilo urbano.,img/adidas29.png,adidas
-Adidas Camiseta,Adidas,$89.000 COP, Importados estilo urbano.,img/adidas30.png,adidas
-Adidas Buzo,Adidas,$150.000 COP, Importados estilo urbano.,img/adidas31.png,adidas
-Adidas Buzo,Adidas,$150.000 COP, Importados estilo urbano.,img/adidas32.png,adidas
-Adidas Sudadera,Adidas,$140.000 COP, Importados estilo urbano.,img/adidas33.png,adidas
-Adidas Samba,Adidas,$510.000 COP,Sneakers importados estilo urbano.,img/adidas34.png,adidas
-Adidas Sudadera Mujer,Adidas,$150.000 COP, Importados estilo urbano.,img/adidas35.png,adidas
-Adidas Sudadera Mujer,Adidas,$150.000 COP, Importados estilo urbano.,img/adidas36.png,adidas
-Adidas Top,Adidas,$116.000 COP, Importados estilo urbano.,img/adidas37.png,adidas
-Adidas Top,Adidas,$150.000 COP, Importados estilo urbano.,img/adidas38.png,adidas
-Adidas Pantalón,Adidas,$199.000 COP, Importados estilo urbano.,img/adidas39.png,adidas
-Adidas Camisa Corta,Adidas,$110.000 COP, Importados estilo urbano.,img/adidas40.png,adidas
-Adidas Chaqueta,Adidas,$260.000 COP, Importados estilo urbano.,img/adidas41.png,adidas
-Adidas Chaqueta,Adidas,$200.000 COP, Importados estilo urbano.,img/adidas42.png,adidas
-Adidas Camiseta,Adidas,$99.000 COP, Importados estilo urbano.,img/adidas43.png,adidas
-Adidas Chaqueta,Adidas,$740.000 COP, Importados estilo urbano.,img/adidas44.png,adidas
-Adidas Chaqueta,Adidas,$252.000 COP, Importados estilo urbano.,img/adidas45.jpeg,adidas
-Classic Hoodie,Tommy Hilfiger,$150.000 COP,Buzo clásico importado.,img/tommy1.jpeg,tommy
-Camiseta,Tommy Hilfiger,$80.000 COP,Camiseta importada.,img/tommy2.png,tommy
-Camiseta,Tommy Hilfiger,$80.000 COP,Camiseta importada.,img/tommy3.png,tommy
-Jean,Tommy Hilfiger,$130.000 COP,Jean importado.,img/tommy4.png,tommy
-Chaqueta,Tommy Hilfiger,$380.000 COP,Chaqueta importado.,img/tommy5.jpeg,tommy
-Vestido,Tommy Hilfiger,$255.000 COP,Vestido importado.,img/tommy6.jpeg,tommy
-Bolso,Tommy Hilfiger,$330.000 COP,Bolso importado.,img/tommy7.jpeg,tommy
-Bolso,Tommy Hilfiger,$410.000 COP,Bolso importado.,img/tommy8.jpeg,tommy
-Chaqueta,Tommy Hilfiger,$380.000 COP,Chaqueta importado.,img/tommy9.jpeg,tommy
-Camiseta mujer,Tommy Hilfiger,$100.000 COP,Camiseta mujer importado.,img/tommy10.jpeg,tommy
-Vestido ,Tommy Hilfiger,$150.000 COP,Vestido importado.,img/tommy11.jpeg,tommy
-Buzo mujer  ,Tommy Hilfiger,$213.000 COP,Buzo (Blnaco y negro) importado.,img/tommy12.jpeg,tommy
-Vestido ,Tommy Hilfiger,$190.000 COP,Vestido importado.,img/tommy13.jpeg,tommy
-Buzo mujer ,Tommy Hilfiger,$220.000 COP,Buzo manga larga importado.,img/tommy14.jpeg,tommy
-Medias,Tommy Hilfiger,$50.000 COP,Medias importado.,img/tommy15.jpeg,tommy
-Buzo mujer,Tommy Hilfiger,$240.000 COP,Buzo importado.,img/tommy16.jpeg,tommy
-Monedero,Tommy Hilfiger,$190.000 COP,monedero importado.,img/tommy17.jpeg,tommy
-Camisa mujer  ,Tommy Hilfiger,$185.000 COP,Camisa manga larga importado.,img/tommy18.jpeg,tommy
-Camiseta mujer  ,Tommy Hilfiger,$100.000 COP,Camiseta mujer importado.,img/tommy19.jpeg,tommy
-Buzo mujer  ,Tommy Hilfiger,$140.000 COP,Buzo importado.,img/tommy20.jpeg,tommy
-Bolso  ,Tommy Hilfiger,$280.000 COP,Bolso importado.,img/tommy21.jpeg,tommy
-Bolso ,Tommy Hilfiger,$300.000 COP,Bolso importado.,img/tommy22.jpeg,tommy
-Bolso ,Tommy Hilfiger,$313.000 COP,Bolso importado.,img/tommy23.jpeg,tommy
-Bolso ,Tommy Hilfiger,$190.000 COP,Bolso importado.,img/tommy24.jpeg,tommy
-Chaqueta mujer ,Tommy Hilfiger,$350.000 COP,Chaqueta importado.,img/tommy25.jpeg,tommy
-Mountain Vest,The North Face,$389.000 COP,Chaleco outdoor premium.,img/products/product4.jpg,north-face
-Buzo Columbia,Columbia,$150.000 COP,Buzo Clasico para clima frío.,img/columbia4.jpeg,columbia
-Buzo Columbia,Columbia,$160.000 COP,Buzo Clasico para clima frío.,img/columbia5.jpeg,columbia
-Chaqueta Columbia,Columbia,$205.000 COP,Chaqueta para clima frío.,img/columbia6.jpeg,columbia
-Chaqueta Columbia,Columbia,$295.000 COP,Chaqueta para clima frío.,img/columbia9.jpeg,columbia
-Chaqueta Columbia,Columbia,$280.000 COP,Chaqueta.,img/columbia7.jpeg,columbia
-Chaqueta Columbia,Columbia,$200.000 COP,Chaqueta para clima frío.,img/columbia2.jpeg,columbia
-Chaqueta Columbia,Columbia,$240.000 COP,Chaqueta para clima frío.,img/columbia8.jpeg,columbia
-Chaqueta Columbia,Columbia,$460.000 COP,Chaqueta para clima frío.,img/columbia3.jpeg,columbia
-Puma,Otras Marcas,$95.000 COP,Producto disponible bajo pedido.,img/puma1.jpeg,otras
-Puma,Otras Marcas,$95.000 COP,Producto disponible bajo pedido.,img/puma2.jpeg,otras
-Magnesio,Marca Natural Calm,$170.000 COP,"Magnesio, producto disponible bajo pedido.",img/otras1.jpeg,otras
-Centrum Women,Marca Centrum,$125.000 COP,"Centrum Womer, producto disponible bajo pedido.",img/otras2.jpeg,otras
-Tenis puma,Puma,$175.000 COP,"Tenis, producto disponible bajo pedido.",img/otras3.jpeg,otras
-Reebook Tenis,Marca Reebook,$199.000 COP,"Tenis producto disponible bajo pedido.",img/otras4.jpeg,otras
-Armani Camisetas hombre ,Marca Armani,$160.000 COP,"Camiseta producto disponible HASTA JUEVES 28.",img/otras5.jpeg,Armani
-Armani Tenis hombre ,Marca Armani,$350.000 COP,"Tenis producto disponible HASTA JUEVES 28.",img/otras6.jpeg,Armani
-Armani Tenis hombre ,Marca Armani,$350.000 COP,"Tenis producto disponible HASTA JUEVES 28.",img/otras7.jpeg,Armani
-Armani Tenis hombre ,Marca Armani,$350.000 COP,"Tenis producto disponible HASTA JUEVES 28.",img/otras8.jpeg,Armani
-Armani Tenis hombre ,Marca Armani,$350.000 COP,"Tenis producto disponible HASTA JUEVES 28.",img/otras9.jpeg,Armani
-Armani Buzo hombre ,Marca Armani,$300.000 COP," producto disponible HASTA JUEVES 28.",img/otras10.jpeg,Armani
+codigo,nombre,marca,precio,descripcion,imagen,categoria
+NK001,Nike,Nike,$400.000 COP,Tenis importados bajo pedido. Consulta disponibilidad y tallas.,img/tenis nike1.jpeg,nike
+NK002,Nike,Nike,$230.000 COP,Buzo importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg2.jpeg,nike
+NK003,Nike,Nike,$310.000 COP,Tenis importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg3.jpeg,nike
+NK004,Nike,Nike,$300.000 COP,Tenis importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg4.jpeg,nike
+NK005,Nike,Nike,$290.000 COP,Tenis importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg5.jpeg,nike
+NK006,Nike,Nike,$490.000 COP,Tenis importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg6.jpeg,nike
+NK007,Nike,Nike,$220.000 COP,Sudadera importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg7.jpeg,nike
+NK008,Nike,Nike,$90.000 COP,Camiseta importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg9.jpeg,nike
+NK009,Nike,Nike,$90.000 COP,Camiseta importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg10.jpeg,nike
+NK010,Nike,Nike,$220.000 COP,Sudadera importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg11.jpeg,nike
+NK011,Nike,Nike,$115.000 COP,Pantalón de sudadera importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg12.jpeg,nike
+NK012,Nike,Nike,$180.000 COP,Buzo importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg14.jpeg,nike
+NK013,Nike,Nike,$145.000 COP,Top deportivo importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg15.jpeg,nike
+NK014,Nike,Nike,$200.000 COP,Top deportivo importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg16.jpeg,nike
+NK015,Nike,Nike,$125.000 COP,Top deportivo importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg17.jpeg,nike
+NK016,Nike,Nike,$220.000 COP,Canguro importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg13.jpeg,nike
+NK017,Nike,Nike,$232.000 COP,buzo importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg19.jpeg,nike
+NK018,Nike,Nike,$125.000 COP,Buzo importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg18.jpeg,nike
+NK019,Nike,Nike,$240.000 COP,Buzo importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg20.jpeg,nike
+NK020,Nike,Nike,$455.000 COP,Sudadera importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg21.jpeg,nike
+NK021,Nike,Nike,$370.000 COP,Sudadera importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg22.jpeg,nike
+NK022,Nike,Nike,$95.000 COP,Camiseta importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg23.jpeg,nike
+NK023,Nike,Nike,$220.000 COP,Pantalón importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg24.jpeg,nike
+NK024,Nike,Nike,$455.000 COP,Sudadera importados bajo pedido. Consulta disponibilidad y tallas.,img/nikeimg21.jpeg,nike
+AD001,Adidas Samba,Adidas,$289.000 COP,Sneakers importados estilo urbano.,img/adidas1.jpeg,adidas
+AD002,Adidas Samba,Adidas,$270.000 COP,Sneakers importados estilo urbano.,img/adidas2.jpeg,adidas
+AD003,Adidas Running,Adidas,$349.000 COP,Sneakers importados estilo urbano.,img/adidas3.jpeg,adidas
+AD004,Adidas ,Adidas,$310.000 COP,Sneakers importados estilo urbano.,img/adidas4.jpeg,adidas
+AD005,Adidas Campus,Adidas,$270.000 COP,Sneakers importados estilo urbano.,img/adidas5.jpeg,adidas
+AD006,Adidas Adizero evo sl mujer,Adidas,$349.000 COP,Sneakers importados estilo urbano.,img/adidas6.jpeg,adidas
+AD007,Adidas Samba,Adidas,$255.000 COP,Sneakers importados estilo urbano.,img/adidas7.jpeg,adidas
+AD008,Adidas Adizero Boston 13 mujer,Adidas,$370.000 COP,Sneakers importados estilo urbano.,img/adidas9.jpeg,adidas
+AD009,Adidas,Adidas,$270.000 COP,Sneakers importados estilo urbano.,img/adidas10.jpeg,adidas
+AD010,Adidas Adizero adios pro 4,Adidas,$580.000 COP,Sneakers importados estilo urbano.,img/adidas11.jpeg,adidas
+AD011,Adidas ,Adidas,$250.000 COP,Sneakers importados estilo urbano.,img/adidas12.png,adidas
+AD012,Adidas Minecraft niño,Adidas,$160.000 COP,Sneakers importados estilo urbano.,img/adidas13.jpeg,adidas
+AD013,Adidas Disney frozen niñas ,Adidas,$150.000 COP,Sneakers importados estilo urbano.,img/adidas14.jpeg,adidas
+AD014,Adidas Disney frozen niñas ,Adidas,$150.000 COP,Sneakers importados estilo urbano.,img/adidas15.jpeg,adidas
+AD015,Adidas Campus niño ,Adidas,$180.000 COP,Sneakers importados estilo urbano.,img/adidas16.jpeg,adidas
+AD016,Adidas Dame X ,Adidas,$240.000 COP,Sneakers importados estilo urbano.,img/adidas17.png,adidas
+AD017,Adidas ultraboost,Adidas,$470.000 COP,Sneakers importados estilo urbano.,img/adidas18.jpeg,adidas
+AD018,Adidas Hombre ,Adidas,$280.000 COP,Sneakers importados estilo urbano.,img/adidas19.jpeg,adidas
+AD019,Adidas Adisar control 5,Adidas,$275.000 COP,Sneakers importados estilo urbano.,img/adidas20.jpeg,adidas
+AD020,Adidas Samba hombre,Adidas,$260.000 COP,Sneakers importados estilo urbano.,img/adidas21.png,adidas
+AD021,Adidas Pantalón hombre Demin jeans,Adidas,$330.000 COP, Importados estilo urbano.,img/adidas22.png,adidas
+AD022,Adidas Buzo hombre,Adidas,$149.000 COP, Importados estilo urbano.,img/adidas23.png,adidas
+AD023,Adidas Sudadera hombre,Adidas,$252.000 COP, Importados estilo urbano.,img/adidas24.png,adidas
+AD024,Adidas Buzo hombre,Adidas,$271.000 COP, Importados estilo urbano.,img/adidas25.png,adidas
+AD025,Adidas Camiseta hombre,Adidas,$97.000 COP, Importados estilo urbano.,img/adidas26.png,adidas
+AD026,Adidas Pantaloneta hombre,Adidas,$110.000 COP, Importados estilo urbano.,img/adidas27.png,adidas
+AD027,Adidas Camiseta,Adidas,$156.000 COP, Importados estilo urbano.,img/adidas29.png,adidas
+AD028,Adidas Camiseta,Adidas,$89.000 COP, Importados estilo urbano.,img/adidas30.png,adidas
+AD029,Adidas Buzo,Adidas,$150.000 COP, Importados estilo urbano.,img/adidas31.png,adidas
+AD030,Adidas Buzo,Adidas,$150.000 COP, Importados estilo urbano.,img/adidas32.png,adidas
+AD031,Adidas Sudadera,Adidas,$140.000 COP, Importados estilo urbano.,img/adidas33.png,adidas
+AD032,Adidas Samba,Adidas,$510.000 COP,Sneakers importados estilo urbano.,img/adidas34.png,adidas
+AD033,Adidas Sudadera Mujer,Adidas,$150.000 COP, Importados estilo urbano.,img/adidas35.png,adidas
+AD034,Adidas Sudadera Mujer,Adidas,$150.000 COP, Importados estilo urbano.,img/adidas36.png,adidas
+AD035,Adidas Top,Adidas,$116.000 COP, Importados estilo urbano.,img/adidas37.png,adidas
+AD036,Adidas Top,Adidas,$150.000 COP, Importados estilo urbano.,img/adidas38.png,adidas
+AD037,Adidas Pantalón,Adidas,$199.000 COP, Importados estilo urbano.,img/adidas39.png,adidas
+AD038,Adidas Camisa Corta,Adidas,$110.000 COP, Importados estilo urbano.,img/adidas40.png,adidas
+AD039,Adidas Chaqueta,Adidas,$260.000 COP, Importados estilo urbano.,img/adidas41.png,adidas
+AD040,Adidas Chaqueta,Adidas,$200.000 COP, Importados estilo urbano.,img/adidas42.png,adidas
+AD041,Adidas Camiseta,Adidas,$99.000 COP, Importados estilo urbano.,img/adidas43.png,adidas
+AD042,Adidas Chaqueta,Adidas,$740.000 COP, Importados estilo urbano.,img/adidas44.png,adidas
+AD043,Adidas Chaqueta,Adidas,$252.000 COP, Importados estilo urbano.,img/adidas45.jpeg,adidas
+TM001,Classic Hoodie,Tommy Hilfiger,$150.000 COP,Buzo clásico importado.,img/tommy1.jpeg,tommy
+TM002,Camiseta,Tommy Hilfiger,$80.000 COP,Camiseta importada.,img/tommy2.png,tommy
+TM003,Camiseta,Tommy Hilfiger,$80.000 COP,Camiseta importada.,img/tommy3.png,tommy
+TM004,Jean,Tommy Hilfiger,$130.000 COP,Jean importado.,img/tommy4.png,tommy
+TM005,Chaqueta,Tommy Hilfiger,$380.000 COP,Chaqueta importado.,img/tommy5.jpeg,tommy
+TM006,Vestido,Tommy Hilfiger,$255.000 COP,Vestido importado.,img/tommy6.jpeg,tommy
+TM007,Bolso,Tommy Hilfiger,$330.000 COP,Bolso importado.,img/tommy7.jpeg,tommy
+TM008,Bolso,Tommy Hilfiger,$410.000 COP,Bolso importado.,img/tommy8.jpeg,tommy
+TM009,Chaqueta,Tommy Hilfiger,$380.000 COP,Chaqueta importado.,img/tommy9.jpeg,tommy
+TM010,Camiseta mujer,Tommy Hilfiger,$100.000 COP,Camiseta mujer importado.,img/tommy10.jpeg,tommy
+TM011,Vestido ,Tommy Hilfiger,$150.000 COP,Vestido importado.,img/tommy11.jpeg,tommy
+TM012,Buzo mujer  ,Tommy Hilfiger,$213.000 COP,Buzo (Blnaco y negro) importado.,img/tommy12.jpeg,tommy
+TM013,Vestido ,Tommy Hilfiger,$190.000 COP,Vestido importado.,img/tommy13.jpeg,tommy
+TM014,Buzo mujer ,Tommy Hilfiger,$220.000 COP,Buzo manga larga importado.,img/tommy14.jpeg,tommy
+TM015,Medias,Tommy Hilfiger,$50.000 COP,Medias importado.,img/tommy15.jpeg,tommy
+TM016,Buzo mujer,Tommy Hilfiger,$240.000 COP,Buzo importado.,img/tommy16.jpeg,tommy
+TM017,Monedero,Tommy Hilfiger,$190.000 COP,monedero importado.,img/tommy17.jpeg,tommy
+TM018,Camisa mujer  ,Tommy Hilfiger,$185.000 COP,Camisa manga larga importado.,img/tommy18.jpeg,tommy
+TM019,Camiseta mujer  ,Tommy Hilfiger,$100.000 COP,Camiseta mujer importado.,img/tommy19.jpeg,tommy
+TM020,Buzo mujer  ,Tommy Hilfiger,$140.000 COP,Buzo importado.,img/tommy20.jpeg,tommy
+TM021,Bolso  ,Tommy Hilfiger,$280.000 COP,Bolso importado.,img/tommy21.jpeg,tommy
+TM022,Bolso ,Tommy Hilfiger,$300.000 COP,Bolso importado.,img/tommy22.jpeg,tommy
+TM023,Bolso ,Tommy Hilfiger,$313.000 COP,Bolso importado.,img/tommy23.jpeg,tommy
+TM024,Bolso ,Tommy Hilfiger,$190.000 COP,Bolso importado.,img/tommy24.jpeg,tommy
+TM025,Chaqueta mujer ,Tommy Hilfiger,$350.000 COP,Chaqueta importado.,img/tommy25.jpeg,tommy
+TM026,Chaqueta hombre ,Tommy Hilfiger,$470.000 COP,Chaqueta importado.,img/tommy26.jpeg,tommy
+TM027,Buzo hombre ,Tommy Hilfiger,$220.000 COP,Chaqueta importado.,img/tommy27.jpeg,tommy
+TM028,Buzo hombre ,Tommy Hilfiger,$190.000 COP,Chaqueta importado.,img/tommy28.jpeg,tommy
+TM029,Gorra ,Tommy Hilfiger,$100.000 COP,Gorra importado.,img/tommy29.png,tommy
+TM030,Pantaloneta ,Tommy Hilfiger,$200.000 COP,Pantaloneta importado.,img/tommy32.png,tommy
+TM031,Camiseta hombre ,Tommy Hilfiger,$100.000 COP,Camiesta importado.,img/tommy31.jpeg,tommy
+TM032,Camiseta hombre ,Tommy Hilfiger,$85.000 COP,Camiesta importado.,img/tommy33.jpeg,tommy
+TM033,Camiseta hombre ,Tommy Hilfiger,$85.000 COP,Camiesta importado.,img/tommy34.jpeg,tommy
+TM034,Camisa hombre ,Tommy Hilfiger,$210.000 COP,Camisa importado.,img/tommy35.png,tommy
+TM035,Camiseta hombre ,Tommy Hilfiger,$135.000 COP,Camiseta importado.,img/tommy37.jpeg,tommy
+TM036,Chaqueta hombre ,Tommy Hilfiger,$360.000 COP,Chaqueta importado.,img/tommy38.png,tommy
+TM037,Camiseta hombre ,Tommy Hilfiger,$100.000 COP,Camiseta importado.,img/tommy39.jpeg,tommy
+TM038,Buzo hombre ,Tommy Hilfiger,$240.000 COP,Buzo importado.,img/tommy40.jpeg,tommy
+TM039,Buzo hombre ,Tommy Hilfiger,$250.000 COP,Buzo importado.,img/tommy41.jpeg,tommy
+NF001,Camiseta mujer,The North Face,$90.000 COP,Camiseta importado.,img/north1.jpeg,north-face
+NF002,Camiseta hombre,The North Face,$100.000 COP,Camiseta importado.,img/north2.jpeg,north-face
+NF003,Camiseta hombre,The North Face,$90.000 COP,Camiseta importado.,img/north3.jpeg,north-face
+NF004,Buzo capota hombre,The North Face,$150.000 COP,Buzo capota importado.,img/north4.jpeg,north-face
+NF005,Buzo capota mujer ,The North Face,$150.000 COP,Buzo capota importado.,img/north5.jpeg,north-face
+NF006,Chaqueta hombre ,The North Face,$360.000 COP,Chaqueta hombre importado.,img/north6.jpeg,north-face
+NF007,North face thermoball mujer ,The North Face,$299.000 COP,North face thermoball mujer importado.,img/north7.jpeg,north-face
+NF008,Buzo mujer ,The North Face,$140.000 COP,Buzo mujer importado.,img/north9.png,north-face
+NF009,Chaqueta hombre ,The North Face,$350.000 COP, Chaqueta hombre importado.,img/north10.png,north-face
+NF010,Buzo mujer ,The North Face,$150.000 COP,Buzo mujer importado.,img/north11.jpeg,north-face
+NF011,Chaqueta mujer ,The North Face,$270.000 COP,chaqueta mujer importado.,img/north12.png,north-face
+NF012,Chaqueta hombre ,The North Face,$330.000 COP,chaqueta hombre importado.,img/north14.jpeg,north-face
+NF013,Buzo hombre,The North Face,$155.000 COP,Buzo hombre importado.,img/north15.png,north-face
+NF014,Chaqueta hombre thermoball,The North Face,$450.000 COP,chaqueta hombre importado.,img/north17.png,north-face
+NF015,Chaqueta hombre,The North Face,$205.000 COP,Chaqueta hombre importado.,img/north18.png,north-face
+CL001,Buzo Columbia,Columbia,$150.000 COP,Buzo Clasico para clima frío.,img/columbia4.jpeg,columbia
+CL002,Buzo Columbia,Columbia,$160.000 COP,Buzo Clasico para clima frío.,img/columbia5.jpeg,columbia
+CL003,Chaqueta Columbia,Columbia,$205.000 COP,Chaqueta para clima frío.,img/columbia6.jpeg,columbia
+CL004,Chaqueta Columbia,Columbia,$295.000 COP,Chaqueta para clima frío.,img/columbia9.jpeg,columbia
+CL005,Chaqueta Columbia,Columbia,$280.000 COP,Chaqueta.,img/columbia7.jpeg,columbia
+CL006,Chaqueta Columbia,Columbia,$200.000 COP,Chaqueta para clima frío.,img/columbia2.jpeg,columbia
+CL007,Chaqueta Columbia,Columbia,$240.000 COP,Chaqueta para clima frío.,img/columbia8.jpeg,columbia
+CL008,Chaqueta Columbia,Columbia,$460.000 COP,Chaqueta para clima frío.,img/columbia3.jpeg,columbia
+OT001,Puma,Otras Marcas,$95.000 COP,Producto disponible bajo pedido.,img/puma1.jpeg,otras
+OT002,Puma,Otras Marcas,$95.000 COP,Producto disponible bajo pedido.,img/puma2.jpeg,otras
+OT003,Magnesio,Marca Natural Calm,$170.000 COP,"Magnesio, producto disponible bajo pedido.",img/otras1.jpeg,otras
+OT004,Centrum Women,Marca Centrum,$125.000 COP,"Centrum Womer, producto disponible bajo pedido.",img/otras2.jpeg,otras
+OT005,Tenis puma,Puma,$175.000 COP,"Tenis, producto disponible bajo pedido.",img/otras3.jpeg,otras
+OT006,Reebook Tenis,Marca Reebook,$199.000 COP,"Tenis producto disponible bajo pedido.",img/otras4.jpeg,otras
+OT007,Chaqueta Guess Mujer,Marca Guess,$180.000 COP,"Chaqueta producto disponible bajo pedido.",img/otras11.jpeg,otras
+OT008,Cloudpulse Next Mujer ,Marca On Cloud,$450.000 COP,"Tenis producto disponible talla 7.5 hasta 10 pedido.",img/otras12.jpeg,On Cloud
+OT009,Cloudrunner 2 Mujer ,Marca On Cloud,$590.000 COP,"Tenis producto disponible bajo pedido.",img/otras13.jpeg,On Cloud
+OT010,Cloudnova Form 2 Mujer ,Marca On Cloud,$495.000 COP,"Tenis producto disponible bajo pedido.",img/otras14.jpeg,On Cloud
+OT011,Cloudmonster Void Mujer ,Marca On Cloud,$510.000 COP,"Tenis producto disponible bajo pedido.",img/otras15.jpeg,On Cloud
+OT012,Armani Camisetas hombre ,Marca Armani,$160.000 COP,"Camiseta producto disponible HASTA JUEVES 28.",img/otras5.jpeg,Armani
+OT013,Armani Tenis hombre ,Marca Armani,$350.000 COP,"Tenis producto disponible HASTA JUEVES 28.",img/otras6.jpeg,Armani
+OT014,Armani Tenis hombre ,Marca Armani,$350.000 COP,"Tenis producto disponible HASTA JUEVES 28.",img/otras7.jpeg,Armani
+OT015,Armani Tenis hombre ,Marca Armani,$350.000 COP,"Tenis producto disponible HASTA JUEVES 28.",img/otras8.jpeg,Armani
+OT016,Armani Tenis hombre ,Marca Armani,$350.000 COP,"Tenis producto disponible HASTA JUEVES 28.",img/otras9.jpeg,Armani
+OT017,Armani Buzo hombre ,Marca Armani,$300.000 COP," producto disponible HASTA JUEVES 28.",img/otras10.jpeg,Armani
