@@ -87,38 +87,65 @@ const mobileMenu = document.getElementById('mobileMenu');
 menuBtn?.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
 });
-</script>
+</script><main class="bg-[#f8f5f1] min-h-screen">
 
-  
+<!-- HERO -->
+<section class="bg-[#f8f5f1] border-b border-black/10">
 
+    <div class="max-w-[1400px] mx-auto">
 
-<main class="bg-[#f8f5f1] min-h-screen">
+        <div class="grid grid-cols-[48%_52%] h-[260px] md:h-[520px]">
 
-    <section class="pt-32 pb-14 bg-[#f8f5f1] border-b border-black/10">
+            <!-- TEXTO -->
+            <div class="flex flex-col justify-center px-5 md:px-14 lg:px-20">
 
-    <div class="container-editorial">
+                <p class="uppercase tracking-[0.35em] text-[10px] md:text-[11px] text-[#8b1e2d] mb-3">
+                    Nuevos ingresos
+                </p>
 
-        <p class="section-label">
-            Catálogo
-        </p>
+                <h1 class="font-serif text-[#111]
+                           text-[1.75rem]
+                           md:text-[5rem]
+                           leading-[0.9]">
 
-        <h1 class="editorial-title text-[#111]">
-            Productos
-        </h1>
+                    Lo más nuevo<br>
+                    acaba de llegar
 
-        <p class="max-w-xl mt-6 text-[#555] leading-7">
-            Explora productos importados disponibles y referencias bajo pedido. 
-            También puedes preguntarnos por marcas diferentes a las que ves aquí.
-        </p>
+                </h1>
+
+                <!-- oculto en móvil -->
+                <p class="hidden md:block mt-5 text-[#555] text-[1rem] leading-8 max-w-[420px]">
+
+                    Moda, belleza y accesorios seleccionados
+                    entre Canadá y Colombia.
+
+                </p>
+
+                
+
+            </div>
+
+            <!-- FOTO -->
+            <div class="relative overflow-hidden">
+
+                <img
+                    src="static/img/modelos.jpg"
+                    alt="611 Boutique"
+                    class="absolute inset-0 w-full h-full object-cover object-center">
+
+            </div>
+
+        </div>
 
     </div>
 
 </section>
 
+
     <section class="py-10 bg-[#f8f5f1]">
   <div class="container-editorial">
 
-    <div class="flex flex-wrap items-center gap-3">
+    <div class="flex gap-3 overflow-x-auto whitespace-nowrap px-6 py-4 border-y border-black/10 scrollbar-hide">
 
       <button onclick="filterProducts('todos', this)" class="filter-btn active-filter">
         Todos
@@ -161,9 +188,11 @@ menuBtn?.addEventListener('click', () => {
   </div>
 </section>
 
+
+
     <section class="pb-24 bg-[#f8f5f1]">
     <div class="container-editorial">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
 
             
 
@@ -177,11 +206,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Tenis importados bajo pedido. Consulta disponibilidad y tallas."
                 data-imagen="static/                                                                                                                                          img/tenis%20nike1.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tenis%20nike1.jpeg"
                         alt="Nike"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full data-imagen="" group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -204,7 +233,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -222,11 +251,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Buzo importados bajo pedido. Consulta disponibilidad y tallas."
                 data-imagen="static/                                                                                                                                          img/nikeimg2.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/nikeimg2.jpeg"
                         alt="Nike"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -249,7 +278,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -267,11 +296,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Tenis importados bajo pedido. Consulta disponibilidad y tallas."
                 data-imagen="static/                                                                                                                                          img/nikeimg3.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/nikeimg3.jpeg"
                         alt="Nike"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -294,7 +323,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -312,11 +341,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Tenis importados bajo pedido. Consulta disponibilidad y tallas."
                 data-imagen="static/                                                                                                                                          img/nikeimg4.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/nikeimg4.jpeg"
                         alt="Nike"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -339,7 +368,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -357,11 +386,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Tenis importados bajo pedido. Consulta disponibilidad y tallas."
                 data-imagen="static/                                                                                                                                          img/nikeimg5.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/nikeimg5.jpeg"
                         alt="Nike"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -384,7 +413,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -402,11 +431,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Tenis importados bajo pedido. Consulta disponibilidad y tallas."
                 data-imagen="static/                                                                                                                                          img/nikeimg6.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/nikeimg6.jpeg"
                         alt="Nike"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -429,7 +458,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -447,11 +476,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Sudadera importados bajo pedido. Consulta disponibilidad y tallas."
                 data-imagen="static/                                                                                                                                          img/nikeimg7.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/nikeimg7.jpeg"
                         alt="Nike"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -474,7 +503,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -492,11 +521,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Camiseta importados bajo pedido. Consulta disponibilidad y tallas."
                 data-imagen="static/                                                                                                                                          img/nikeimg9.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/nikeimg9.jpeg"
                         alt="Nike"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -519,7 +548,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -537,11 +566,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Camiseta importados bajo pedido. Consulta disponibilidad y tallas."
                 data-imagen="static/                                                                                                                                          img/nikeimg10.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/nikeimg10.jpeg"
                         alt="Nike"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -564,7 +593,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -582,11 +611,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Sudadera importados bajo pedido. Consulta disponibilidad y tallas."
                 data-imagen="static/                                                                                                                                          img/nikeimg11.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/nikeimg11.jpeg"
                         alt="Nike"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -609,7 +638,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -627,11 +656,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Pantalón de sudadera importados bajo pedido. Consulta disponibilidad y tallas."
                 data-imagen="static/                                                                                                                                          img/nikeimg12.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/nikeimg12.jpeg"
                         alt="Nike"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -654,7 +683,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -672,11 +701,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Buzo importados bajo pedido. Consulta disponibilidad y tallas."
                 data-imagen="static/                                                                                                                                          img/nikeimg14.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/nikeimg14.jpeg"
                         alt="Nike"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -699,7 +728,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -717,11 +746,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Top deportivo importados bajo pedido. Consulta disponibilidad y tallas."
                 data-imagen="static/                                                                                                                                          img/nikeimg15.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/nikeimg15.jpeg"
                         alt="Nike"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -744,7 +773,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -762,11 +791,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Top deportivo importados bajo pedido. Consulta disponibilidad y tallas."
                 data-imagen="static/                                                                                                                                          img/nikeimg16.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/nikeimg16.jpeg"
                         alt="Nike"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -789,7 +818,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -807,11 +836,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Top deportivo importados bajo pedido. Consulta disponibilidad y tallas."
                 data-imagen="static/                                                                                                                                          img/nikeimg17.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/nikeimg17.jpeg"
                         alt="Nike"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -834,7 +863,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -852,11 +881,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Canguro importados bajo pedido. Consulta disponibilidad y tallas."
                 data-imagen="static/                                                                                                                                          img/nikeimg13.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/nikeimg13.jpeg"
                         alt="Nike"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -879,7 +908,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -897,11 +926,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="buzo importados bajo pedido. Consulta disponibilidad y tallas."
                 data-imagen="static/                                                                                                                                          img/nikeimg19.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/nikeimg19.jpeg"
                         alt="Nike"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -924,7 +953,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -942,11 +971,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Buzo importados bajo pedido. Consulta disponibilidad y tallas."
                 data-imagen="static/                                                                                                                                          img/nikeimg18.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/nikeimg18.jpeg"
                         alt="Nike"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -969,7 +998,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -987,11 +1016,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Buzo importados bajo pedido. Consulta disponibilidad y tallas."
                 data-imagen="static/                                                                                                                                          img/nikeimg20.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/nikeimg20.jpeg"
                         alt="Nike"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -1014,7 +1043,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -1032,11 +1061,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Sudadera importados bajo pedido. Consulta disponibilidad y tallas."
                 data-imagen="static/                                                                                                                                          img/nikeimg21.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/nikeimg21.jpeg"
                         alt="Nike"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -1059,7 +1088,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -1077,11 +1106,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Sudadera importados bajo pedido. Consulta disponibilidad y tallas."
                 data-imagen="static/                                                                                                                                          img/nikeimg22.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/nikeimg22.jpeg"
                         alt="Nike"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -1104,7 +1133,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -1122,11 +1151,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Camiseta importados bajo pedido. Consulta disponibilidad y tallas."
                 data-imagen="static/                                                                                                                                          img/nikeimg23.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/nikeimg23.jpeg"
                         alt="Nike"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -1149,7 +1178,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -1167,11 +1196,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Pantalón importados bajo pedido. Consulta disponibilidad y tallas."
                 data-imagen="static/                                                                                                                                          img/nikeimg24.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/nikeimg24.jpeg"
                         alt="Nike"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -1194,7 +1223,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -1212,11 +1241,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Sudadera importados bajo pedido. Consulta disponibilidad y tallas."
                 data-imagen="static/                                                                                                                                          img/nikeimg21.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/nikeimg21.jpeg"
                         alt="Nike"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -1239,7 +1268,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -1257,11 +1286,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Sneakers importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas1.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas1.jpeg"
                         alt="Adidas Samba"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -1284,7 +1313,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -1302,11 +1331,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Sneakers importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas2.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas2.jpeg"
                         alt="Adidas Samba"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -1329,7 +1358,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -1347,11 +1376,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Sneakers importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas3.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas3.jpeg"
                         alt="Adidas Running"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -1374,7 +1403,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -1392,11 +1421,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Sneakers importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas4.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas4.jpeg"
                         alt="Adidas "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -1419,7 +1448,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -1437,11 +1466,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Sneakers importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas5.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas5.jpeg"
                         alt="Adidas Campus"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -1464,7 +1493,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -1482,11 +1511,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Sneakers importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas6.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas6.jpeg"
                         alt="Adidas Adizero evo sl mujer"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -1509,7 +1538,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -1527,11 +1556,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Sneakers importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas7.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas7.jpeg"
                         alt="Adidas Samba"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -1554,7 +1583,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -1572,11 +1601,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Sneakers importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas9.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas9.jpeg"
                         alt="Adidas Adizero Boston 13 mujer"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -1599,7 +1628,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -1617,11 +1646,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Sneakers importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas10.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas10.jpeg"
                         alt="Adidas"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -1644,7 +1673,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -1662,11 +1691,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Sneakers importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas11.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas11.jpeg"
                         alt="Adidas Adizero adios pro 4"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -1689,7 +1718,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -1707,11 +1736,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Sneakers importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas12.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas12.png"
                         alt="Adidas "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -1734,7 +1763,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -1752,11 +1781,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Sneakers importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas13.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas13.jpeg"
                         alt="Adidas Minecraft niño"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -1779,7 +1808,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -1797,11 +1826,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Sneakers importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas14.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas14.jpeg"
                         alt="Adidas Disney frozen niñas "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -1824,7 +1853,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -1842,11 +1871,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Sneakers importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas15.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas15.jpeg"
                         alt="Adidas Disney frozen niñas "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -1869,7 +1898,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -1887,11 +1916,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Sneakers importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas16.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas16.jpeg"
                         alt="Adidas Campus niño "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -1914,7 +1943,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -1932,11 +1961,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Sneakers importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas17.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas17.png"
                         alt="Adidas Dame X "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -1959,7 +1988,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -1977,11 +2006,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Sneakers importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas18.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas18.jpeg"
                         alt="Adidas ultraboost"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -2004,7 +2033,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -2022,11 +2051,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Sneakers importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas19.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas19.jpeg"
                         alt="Adidas Hombre "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -2049,7 +2078,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -2067,11 +2096,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Sneakers importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas20.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas20.jpeg"
                         alt="Adidas Adisar control 5"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -2094,7 +2123,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -2112,11 +2141,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Sneakers importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas21.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas21.png"
                         alt="Adidas Samba hombre"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -2139,7 +2168,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -2157,11 +2186,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion=" Importados estilo urbano."
                 data-imagen="static/img/adidas22.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas22.png"
                         alt="Adidas Pantalón hombre Demin jeans"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -2184,7 +2213,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -2202,11 +2231,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion=" Importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas23.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas23.png"
                         alt="Adidas Buzo hombre"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -2229,7 +2258,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -2247,11 +2276,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion=" Importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas24.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas24.png"
                         alt="Adidas Sudadera hombre"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -2274,7 +2303,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -2292,11 +2321,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion=" Importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas25.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas25.png"
                         alt="Adidas Buzo hombre"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -2319,7 +2348,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -2337,11 +2366,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion=" Importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas26.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas26.png"
                         alt="Adidas Camiseta hombre"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -2364,7 +2393,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -2382,11 +2411,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion=" Importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas27.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas27.png"
                         alt="Adidas Pantaloneta hombre"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -2409,7 +2438,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -2427,11 +2456,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion=" Importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas29.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas29.png"
                         alt="Adidas Camiseta"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -2454,7 +2483,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -2472,11 +2501,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion=" Importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas30.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas30.png"
                         alt="Adidas Camiseta"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -2499,7 +2528,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -2517,11 +2546,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion=" Importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas31.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas31.png"
                         alt="Adidas Buzo"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -2544,7 +2573,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -2562,11 +2591,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion=" Importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas32.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas32.png"
                         alt="Adidas Buzo"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -2589,7 +2618,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -2607,11 +2636,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion=" Importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas33.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas33.png"
                         alt="Adidas Sudadera"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -2634,7 +2663,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -2652,11 +2681,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Sneakers importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas34.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas34.png"
                         alt="Adidas Samba"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -2679,7 +2708,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -2697,11 +2726,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion=" Importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas35.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas35.png"
                         alt="Adidas Sudadera Mujer"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -2724,7 +2753,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -2742,11 +2771,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion=" Importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas36.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas36.png"
                         alt="Adidas Sudadera Mujer"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -2769,7 +2798,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -2787,11 +2816,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion=" Importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas37.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas37.png"
                         alt="Adidas Top"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -2814,7 +2843,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -2832,11 +2861,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion=" Importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas38.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas38.png"
                         alt="Adidas Top"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -2859,7 +2888,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -2877,11 +2906,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion=" Importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas39.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas39.png"
                         alt="Adidas Pantalón"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -2904,7 +2933,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -2922,11 +2951,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion=" Importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas40.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas40.png"
                         alt="Adidas Camisa Corta"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -2949,7 +2978,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -2967,11 +2996,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion=" Importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas41.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas41.png"
                         alt="Adidas Chaqueta"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -2994,7 +3023,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -3012,11 +3041,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion=" Importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas42.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas42.png"
                         alt="Adidas Chaqueta"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -3039,7 +3068,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -3057,11 +3086,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion=" Importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas43.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas43.png"
                         alt="Adidas Camiseta"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -3084,7 +3113,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -3102,11 +3131,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion=" Importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas44.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas44.png"
                         alt="Adidas Chaqueta"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -3129,7 +3158,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -3147,11 +3176,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion=" Importados estilo urbano."
                 data-imagen="static/                                                                                                                                          img/adidas45.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/adidas45.jpeg"
                         alt="Adidas Chaqueta"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -3174,7 +3203,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -3192,11 +3221,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Buzo clásico importado."
                 data-imagen="static/                                                                                                                                          img/tommy1.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy1.jpeg"
                         alt="Classic Hoodie"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -3219,7 +3248,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -3237,11 +3266,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Camiseta importada."
                 data-imagen="static/                                                                                                                                          img/tommy2.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy2.png"
                         alt="Camiseta"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -3264,7 +3293,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -3282,11 +3311,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Camiseta importada."
                 data-imagen="static/                                                                                                                                          img/tommy3.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy3.png"
                         alt="Camiseta"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -3309,7 +3338,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -3327,11 +3356,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Jean importado."
                 data-imagen="static/img/tommy4.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy4.png"
                         alt="Jean"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -3354,7 +3383,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -3372,11 +3401,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Chaqueta importado."
                 data-imagen="static/                                                                                                                                          img/tommy5.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy5.jpeg"
                         alt="Chaqueta"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -3399,7 +3428,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -3417,11 +3446,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Vestido importado."
                 data-imagen="static/                                                                                                                                          img/tommy6.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy6.jpeg"
                         alt="Vestido"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -3444,7 +3473,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -3462,11 +3491,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Bolso importado."
                 data-imagen="static/                                                                                                                                          img/tommy7.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy7.jpeg"
                         alt="Bolso"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -3489,7 +3518,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -3507,11 +3536,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Bolso importado."
                 data-imagen="static/                                                                                                                                          img/tommy8.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy8.jpeg"
                         alt="Bolso"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -3534,7 +3563,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -3552,11 +3581,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Chaqueta importado."
                 data-imagen="static/                                                                                                                                          img/tommy9.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy9.jpeg"
                         alt="Chaqueta"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -3579,7 +3608,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -3597,11 +3626,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Camiseta mujer importado."
                 data-imagen="static/                                                                                                                                          img/tommy10.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy10.jpeg"
                         alt="Camiseta mujer"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -3624,7 +3653,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -3642,11 +3671,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Vestido importado."
                 data-imagen="static/                                                                                                                                          img/tommy11.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy11.jpeg"
                         alt="Vestido "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -3669,7 +3698,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -3687,11 +3716,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Buzo (Blnaco y negro) importado."
                 data-imagen="static/                                                                                                                                          img/tommy12.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy12.jpeg"
                         alt="Buzo mujer  "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -3714,7 +3743,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -3732,11 +3761,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Vestido importado."
                 data-imagen="static/                                                                                                                                          img/tommy13.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy13.jpeg"
                         alt="Vestido "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -3759,7 +3788,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -3777,11 +3806,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Buzo manga larga importado."
                 data-imagen="static/                                                                                                                                          img/tommy14.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy14.jpeg"
                         alt="Buzo mujer "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -3804,7 +3833,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -3822,11 +3851,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Medias importado."
                 data-imagen="static/                                                                                                                                          img/tommy15.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy15.jpeg"
                         alt="Medias"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -3849,7 +3878,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -3867,11 +3896,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Buzo importado."
                 data-imagen="static/                                                                                                                                          img/tommy16.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy16.jpeg"
                         alt="Buzo mujer"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -3894,7 +3923,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -3912,11 +3941,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="monedero importado."
                 data-imagen="static/                                                                                                                                          img/tommy17.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy17.jpeg"
                         alt="Monedero"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -3939,7 +3968,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -3957,11 +3986,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Camisa manga larga importado."
                 data-imagen="static/                                                                                                                                          img/tommy18.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy18.jpeg"
                         alt="Camisa mujer  "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -3984,7 +4013,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -4002,11 +4031,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Camiseta mujer importado."
                 data-imagen="static/                                                                                                                                          img/tommy19.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy19.jpeg"
                         alt="Camiseta mujer  "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -4029,7 +4058,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -4047,11 +4076,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Buzo importado."
                 data-imagen="static/                                                                                                                                          img/tommy20.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy20.jpeg"
                         alt="Buzo mujer  "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -4074,7 +4103,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -4092,11 +4121,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Bolso importado."
                 data-imagen="static/                                                                                                                                          img/tommy21.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy21.jpeg"
                         alt="Bolso  "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -4119,7 +4148,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -4137,11 +4166,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Bolso importado."
                 data-imagen="static/                                                                                                                                          img/tommy22.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy22.jpeg"
                         alt="Bolso "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -4164,7 +4193,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -4182,11 +4211,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Bolso importado."
                 data-imagen="static/                                                                                                                                          img/tommy23.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy23.jpeg"
                         alt="Bolso "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -4209,7 +4238,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -4227,11 +4256,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Bolso importado."
                 data-imagen="static/                                                                                                                                          img/tommy24.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy24.jpeg"
                         alt="Bolso "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -4254,7 +4283,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -4272,11 +4301,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Chaqueta importado."
                 data-imagen="static/                                                                                                                                          img/tommy25.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy25.jpeg"
                         alt="Chaqueta mujer "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -4299,7 +4328,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -4317,11 +4346,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Chaqueta importado."
                 data-imagen="static/                                                                                                                                          img/tommy26.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy26.jpeg"
                         alt="Chaqueta hombre "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -4344,7 +4373,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -4362,11 +4391,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Chaqueta importado."
                 data-imagen="static/                                                                                                                                          img/tommy27.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy27.jpeg"
                         alt="Buzo hombre "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -4389,7 +4418,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -4407,11 +4436,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Chaqueta importado."
                 data-imagen="static/                                                                                                                                          img/tommy28.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy28.jpeg"
                         alt="Buzo hombre "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -4434,7 +4463,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -4452,11 +4481,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Gorra importado."
                 data-imagen="static/                                                                                                                                          img/tommy29.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy29.png"
                         alt="Gorra "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -4479,7 +4508,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -4497,11 +4526,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Pantaloneta importado."
                 data-imagen="static/                                                                                                                                          img/tommy32.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy32.png"
                         alt="Pantaloneta "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -4524,7 +4553,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -4542,11 +4571,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Camiesta importado."
                 data-imagen="static/                                                                                                                                          img/tommy31.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy31.jpeg"
                         alt="Camiseta hombre "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -4569,7 +4598,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -4587,11 +4616,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Camiesta importado."
                 data-imagen="static/                                                                                                                                          img/tommy33.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy33.jpeg"
                         alt="Camiseta hombre "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -4614,7 +4643,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -4632,11 +4661,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Camiesta importado."
                 data-imagen="static/                                                                                                                                          img/tommy34.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy34.jpeg"
                         alt="Camiseta hombre "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -4659,7 +4688,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -4677,11 +4706,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Camisa importado."
                 data-imagen="static/                                                                                                                                          img/tommy35.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy35.png"
                         alt="Camisa hombre "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -4704,7 +4733,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -4722,11 +4751,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Camiseta importado."
                 data-imagen="static/                                                                                                                                          img/tommy37.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy37.jpeg"
                         alt="Camiseta hombre "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -4749,7 +4778,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -4767,11 +4796,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Chaqueta importado."
                 data-imagen="static/                                                                                                                                          img/tommy38.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy38.png"
                         alt="Chaqueta hombre "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -4794,7 +4823,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -4812,11 +4841,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Camiseta importado."
                 data-imagen="static/                                                                                                                                          img/tommy39.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy39.jpeg"
                         alt="Camiseta hombre "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -4839,7 +4868,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -4857,11 +4886,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Buzo importado."
                 data-imagen="static/                                                                                                                                          img/tommy40.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy40.jpeg"
                         alt="Buzo hombre "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -4884,7 +4913,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -4902,11 +4931,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Buzo importado."
                 data-imagen="static/                                                                                                                                          img/tommy41.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/tommy41.jpeg"
                         alt="Buzo hombre "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -4929,7 +4958,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -4947,11 +4976,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Camiseta importado."
                 data-imagen="static/                                                                                                                                          img/north1.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/north1.jpeg"
                         alt="Camiseta mujer"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -4974,7 +5003,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -4992,11 +5021,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Camiseta importado."
                 data-imagen="static/                                                                                                                                          img/north2.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/north2.jpeg"
                         alt="Camiseta hombre"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -5019,7 +5048,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -5037,11 +5066,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Camiseta importado."
                 data-imagen="static/                                                                                                                                          img/north3.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/north3.jpeg"
                         alt="Camiseta hombre"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -5064,7 +5093,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -5082,11 +5111,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Buzo capota importado."
                 data-imagen="static/                                                                                                                                          img/north4.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/north4.jpeg"
                         alt="Buzo capota hombre"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -5109,7 +5138,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -5127,11 +5156,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Buzo capota importado."
                 data-imagen="static/                                                                                                                                          img/north5.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/north5.jpeg"
                         alt="Buzo capota mujer "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -5154,7 +5183,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -5172,11 +5201,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Chaqueta hombre importado."
                 data-imagen="static/                                                                                                                                          img/north6.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/north6.jpeg"
                         alt="Chaqueta hombre "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -5199,7 +5228,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -5217,11 +5246,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="North face thermoball mujer importado."
                 data-imagen="static/                                                                                                                                          img/north7.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/north7.jpeg"
                         alt="North face thermoball mujer "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -5244,7 +5273,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -5262,11 +5291,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Buzo mujer importado."
                 data-imagen="static/                                                                                                                                          img/north9.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/north9.png"
                         alt="Buzo mujer "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -5289,7 +5318,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -5307,11 +5336,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion=" Chaqueta hombre importado."
                 data-imagen="static/                                                                                                                                          img/north10.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/north10.png"
                         alt="Chaqueta hombre "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -5334,7 +5363,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -5352,11 +5381,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Buzo mujer importado."
                 data-imagen="static/                                                                                                                                          img/north11.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/north11.jpeg"
                         alt="Buzo mujer "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -5379,7 +5408,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -5397,11 +5426,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="chaqueta mujer importado."
                 data-imagen="static/                                                                                                                                          img/north12.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/north12.png"
                         alt="Chaqueta mujer "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -5424,7 +5453,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -5442,11 +5471,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="chaqueta hombre importado."
                 data-imagen="static/                                                                                                                                          img/north14.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/north14.jpeg"
                         alt="Chaqueta hombre "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -5469,7 +5498,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -5487,11 +5516,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Buzo hombre importado."
                 data-imagen="static/                                                                                                                                          img/north15.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/north15.png"
                         alt="Buzo hombre"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -5514,7 +5543,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -5532,11 +5561,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="chaqueta hombre importado."
                 data-imagen="static/                                                                                                                                          img/north17.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/north17.png"
                         alt="Chaqueta hombre thermoball"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -5559,7 +5588,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -5577,11 +5606,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Chaqueta hombre importado."
                 data-imagen="static/                                                                                                                                          img/north18.png">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/north18.png"
                         alt="Chaqueta hombre"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -5604,7 +5633,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -5622,11 +5651,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Buzo Clasico para clima frío."
                 data-imagen="static/                                                                                                                                          img/columbia4.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/columbia4.jpeg"
                         alt="Buzo Columbia"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -5649,7 +5678,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -5667,11 +5696,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Buzo Clasico para clima frío."
                 data-imagen="static/                                                                                                                                          img/columbia5.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/columbia5.jpeg"
                         alt="Buzo Columbia"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -5694,7 +5723,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -5712,11 +5741,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Chaqueta para clima frío."
                 data-imagen="static/                                                                                                                                          img/columbia6.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/columbia6.jpeg"
                         alt="Chaqueta Columbia"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -5739,7 +5768,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -5757,11 +5786,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Chaqueta para clima frío."
                 data-imagen="static/                                                                                                                                          img/columbia9.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/columbia9.jpeg"
                         alt="Chaqueta Columbia"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -5784,7 +5813,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -5802,11 +5831,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Chaqueta."
                 data-imagen="static/                                                                                                                                          img/columbia7.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/columbia7.jpeg"
                         alt="Chaqueta Columbia"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -5829,7 +5858,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -5847,11 +5876,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Chaqueta para clima frío."
                 data-imagen="static/                                                                                                                                          img/columbia2.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/columbia2.jpeg"
                         alt="Chaqueta Columbia"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -5874,7 +5903,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -5892,11 +5921,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Chaqueta para clima frío."
                 data-imagen="static/                                                                                                                                          img/columbia8.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/columbia8.jpeg"
                         alt="Chaqueta Columbia"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -5919,7 +5948,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -5937,11 +5966,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Chaqueta para clima frío."
                 data-imagen="static/                                                                                                                                          img/columbia3.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/columbia3.jpeg"
                         alt="Chaqueta Columbia"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -5964,7 +5993,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -5982,11 +6011,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Producto disponible bajo pedido."
                 data-imagen="static/                                                                                                                                          img/puma1.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/puma1.jpeg"
                         alt="Puma"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -6009,7 +6038,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -6027,11 +6056,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Producto disponible bajo pedido."
                 data-imagen="static/                                                                                                                                          img/puma2.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/puma2.jpeg"
                         alt="Puma"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -6054,7 +6083,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -6072,11 +6101,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Magnesio, producto disponible bajo pedido."
                 data-imagen="static/                                                                                                                                          img/otras1.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/otras1.jpeg"
                         alt="Magnesio"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -6099,7 +6128,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -6117,11 +6146,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Centrum Womer, producto disponible bajo pedido."
                 data-imagen="static/                                                                                                                                          img/otras2.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/otras2.jpeg"
                         alt="Centrum Women"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -6144,7 +6173,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -6162,11 +6191,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Tenis, producto disponible bajo pedido."
                 data-imagen="static/                                                                                                                                          img/otras3.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/otras3.jpeg"
                         alt="Tenis puma"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -6189,7 +6218,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -6207,11 +6236,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Tenis producto disponible bajo pedido."
                 data-imagen="static/                                                                                                                                          img/otras4.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/otras4.jpeg"
                         alt="Reebook Tenis"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -6234,7 +6263,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -6252,11 +6281,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Chaqueta producto disponible bajo pedido."
                 data-imagen="static/                                                                                                                                          img/otras11.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/otras11.jpeg"
                         alt="Chaqueta Guess Mujer"
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -6279,7 +6308,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -6297,11 +6326,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Tenis producto disponible talla 7.5 hasta 10 pedido."
                 data-imagen="static/img/otras12.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/otras12.jpeg"
                         alt="Cloudpulse Next Mujer "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -6324,7 +6353,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -6342,11 +6371,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Tenis producto disponible bajo pedido."
                 data-imagen="static/                                                                                                                                          img/otras13.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/otras13.jpeg"
                         alt="Cloudrunner 2 Mujer "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -6369,7 +6398,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -6387,11 +6416,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Tenis producto disponible bajo pedido."
                 data-imagen="static/                                                                                                                                          img/otras14.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/otras14.jpeg"
                         alt="Cloudnova Form 2 Mujer "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -6414,7 +6443,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -6432,11 +6461,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Tenis producto disponible bajo pedido."
                 data-imagen="static/                                                                                                                                          img/otras15.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/otras15.jpeg"
                         alt="Cloudmonster Void Mujer "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -6459,7 +6488,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -6477,11 +6506,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Camiseta producto disponible HASTA JUEVES 28."
                 data-imagen="static/                                                                                                                                          img/otras5.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/otras5.jpeg"
                         alt="Armani Camisetas hombre "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -6504,7 +6533,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -6522,11 +6551,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Tenis producto disponible HASTA JUEVES 28."
                 data-imagen="static/                                                                                                                                          img/otras6.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/otras6.jpeg"
                         alt="Armani Tenis hombre "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -6549,7 +6578,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -6567,11 +6596,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Tenis producto disponible HASTA JUEVES 28."
                 data-imagen="static/                                                                                                                                          img/otras7.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/otras7.jpeg"
                         alt="Armani Tenis hombre "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -6594,7 +6623,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -6612,11 +6641,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Tenis producto disponible HASTA JUEVES 28."
                 data-imagen="static/                                                                                                                                          img/otras8.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/otras8.jpeg"
                         alt="Armani Tenis hombre "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -6639,7 +6668,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -6657,11 +6686,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion="Tenis producto disponible HASTA JUEVES 28."
                 data-imagen="static/                                                                                                                                          img/otras9.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/otras9.jpeg"
                         alt="Armani Tenis hombre "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -6684,7 +6713,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -6702,11 +6731,11 @@ menuBtn?.addEventListener('click', () => {
                 data-descripcion=" producto disponible HASTA JUEVES 28."
                 data-imagen="static/                                                                                                                                          img/otras10.jpeg">
 
-                <div class="aspect-[4/5] overflow-hidden bg-[#eee] abrir-modal">
+                <div class="aspect-square overflow-hidden bg-[#eee] abrir-modal">
                     <img
                         src="static/img/otras10.jpeg"
                         alt="Armani Buzo hombre "
-                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        class="w-full h-full object-contain group-hover:scale-105 transition duration-700">
                 </div>
 
                 <div class="pt-5">
@@ -6729,7 +6758,7 @@ menuBtn?.addEventListener('click', () => {
                     <button
                         type="button"
                         class="btn-agregar mt-4 w-full bg-[#8b1e2d] text-white text-sm py-3 rounded-full hover:bg-black transition">
-                        Agregar para consultar
+                        consultar 
                     </button>
                 </div>
 
@@ -6790,7 +6819,7 @@ menuBtn?.addEventListener('click', () => {
                         id="modalImage"
                         src=""
                         alt=""
-                        class="w-full max-h-[80vh] object-cover">
+                        class="w-full max-h-[80vh] object-contain">
 
                 </div>
 
@@ -6994,92 +7023,63 @@ document.getElementById('productModal').addEventListener('click', function(e){
 
 
 
-  <footer class="bg-[#111111] text-white">
 
-    <div class="max-w-[1400px] mx-auto px-8 py-20">
+<footer class="bg-[#111] text-white">
 
-        <div class="grid lg:grid-cols-3 gap-16">
+    <div class="max-w-[1400px] mx-auto px-6 md:px-8 py-10">
 
-            <!-- COLUMNA 1 -->
-            <div>
+        <div class="flex flex-col md:flex-row items-center justify-between gap-8">
 
-                <h2 class="font-serif text-5xl mb-6">
+            <!-- LOGO -->
+            <div class="text-center md:text-left">
+
+                <h2 class="font-serif text-3xl">
                     611 Boutique
                 </h2>
 
-                <p class="text-white/70 leading-relaxed max-w-sm">
-                    Productos seleccionados entre
-                    Canadá y Colombia. Moda, accesorios, belleza y artículos
-                    únicos elegidos cuidadosamente para nuestros clientes.
+                <p class="text-white/50 text-sm mt-2">
+                    Canadá ↔ Colombia
                 </p>
 
             </div>
 
-            <!-- COLUMNA 2 -->
-            <div>
+            <!-- MENÚ -->
+            <div class="flex gap-6 text-sm uppercase tracking-[0.2em]">
 
-                <p class="uppercase tracking-[0.35em] text-xs text-white/50 mb-6">
-                    Navegación
-                </p>
+                <a href="index.html" class="hover:text-[#8b1e2d] transition">
+                    Inicio
+                </a>
 
-                <div class="flex flex-col gap-4">
+                <a href="productos.html" class="hover:text-[#8b1e2d] transition">
+                    Productos
+                </a>
 
-                    <a href="index.html" class="hover:text-[#b01f33] transition">
-                        Inicio
-                    </a>
-
-                    <a href="productos.html" class="hover:text-[#b01f33] transition">
-                        Productos
-                    </a>
-
-                    <a href="historia.html" class="hover:text-[#b01f33] transition">
-                        Historia
-                    </a>
-
-                </div>
+                <a href="historia.html" class="hover:text-[#8b1e2d] transition">
+                    Historia
+                </a>
 
             </div>
 
-            <!-- COLUMNA 3 -->
-            <div>
+            <!-- REDES -->
+            <div class="flex gap-5">
 
-                <p class="uppercase tracking-[0.35em] text-xs text-white/50 mb-6">
-                    Contacto
-                </p>
+                <a href="#" class="hover:text-[#8b1e2d] transition">
+                    Instagram
+                </a>
 
-                <div class="flex flex-col gap-4">
-
-                    <a href="#" class="hover:text-[#b01f33] transition">
-                        Instagram
-                    </a>
-
-                    <a href="#" class="hover:text-[#b01f33] transition">
-                        WhatsApp
-                    </a>
-
-                    <a href="#" class="hover:text-[#b01f33] transition">
-                        Correo electrónico
-                    </a>
-
-                </div>
+                <a href="#" class="hover:text-[#8b1e2d] transition">
+                    WhatsApp
+                </a>
 
             </div>
 
         </div>
 
-        <div class="border-t border-white/10 mt-16 pt-8">
+        <div class="border-t border-white/10 mt-8 pt-6 text-center">
 
-            <div class="flex flex-col md:flex-row justify-between gap-4">
-
-                <p class="text-white/50 text-sm">
-                    © 2026 611 Boutique. Todos los derechos reservados.
-                </p>
-
-                <p class="uppercase tracking-[0.30em] text-xs text-white/40">
-                    Canadá ↔ Colombia
-                </p>
-
-            </div>
+            <p class="text-white/40 text-xs">
+                © 2026 611 Boutique
+            </p>
 
         </div>
 

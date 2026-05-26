@@ -69,3 +69,12 @@ body{
     color: white;
     border-color: #8b1e2d;
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
