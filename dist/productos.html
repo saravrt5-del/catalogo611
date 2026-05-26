@@ -6883,9 +6883,7 @@ function openProductModal(name, brand, price, description, image, codigo){
 
     document.getElementById('modalDescription').innerText = description;
 
-    document.getElementById('modalImage').src = event.currentTarget.querySelector('img').src;
-
-   const codigo = document.querySelector(`.product-card[data-nombre="${name}"][data-precio="${price}"]`)?.dataset.codigo || "";
+    document.getElementById('modalImage').src = image;
 
     const whatsappMessage =`Hola, me interesa el producto ${codigo}`;
 
