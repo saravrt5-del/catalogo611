@@ -6873,7 +6873,7 @@ menuBtn?.addEventListener('click', () => {
 
 <script>
 
-function openProductModal(name, brand, price, description, image, codigo){
+function openProductModal(name, brand, price, description, image, productCode){
 
     document.getElementById('modalName').innerText = name;
 
@@ -6885,7 +6885,7 @@ function openProductModal(name, brand, price, description, image, codigo){
 
     document.getElementById('modalImage').src = image;
 
-    const whatsappMessage =`Hola, me interesa el producto ${codigo}`;
+    const whatsappMessage =`Hola, me interesa el producto ${productCode}`;
 
     document.getElementById('modalWhatsapp').href =
     `https://wa.me/573108111384?text=${encodeURIComponent(whatsappMessage)}`;
